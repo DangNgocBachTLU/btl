@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UpdateActivity"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/custom_toolbar_add_transaction"
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="?actionBarSize">
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Chỉnh xửa"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/amount_add"
+        android:inputType="number"
+        android:hint="Giá"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/note_add"
+        android:hint="Nội dung"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/expense_checkbox"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Chi phí"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/income_checkbox"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Thu nhập"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Cập nhật"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Xóa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
