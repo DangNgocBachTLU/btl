@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">btl</string>
+    <string name="select" />
 </resources>
